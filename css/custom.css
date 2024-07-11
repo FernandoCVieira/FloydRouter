@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.42857143;
+    background-color: #FFF;
+}
+
+.origin, .destination {
+    font-weight: bold;
+    text-align: center;
+    background-color: #e0ffe0;
+}
+
+td {
+    border: 1px solid grey;
+    width: 100px;
+    cursor: default;
+    background-color: #ffffff;
+ }
+
+ caption {
+    caption-side: top;
+ }
+
+#mapa {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.formulario {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.resultado {
+    margin-bottom: 20px;
+}
+
+.busca-endereco {
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #FFF;
+    border: 2px solid #DDD;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+#matriz {
+    font-size: 11px;
+    border-collapse: collapse;
+}
+
+.container {
+    width: 100;
+    padding: 15px;
+}
+
+.selectbtn {
+    display: inline-block;
+}
+
+/* Bootstrap */
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+/* Lista Lugares */
+.list-group-item {
+    padding-right: 25px;
+}
+
+.icon-remover-lugar {
+    color: #d9534f;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+/* Auto complete */
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    _width: 160px;
+    padding: 4px 0;
+    margin: 2px 0 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-autocomplete .ui-menu-item>a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+}
+
+.ui-autocomplete .ui-menu-item>a.ui-corner-all.ui-state-hover,
+.ui-autocomplete .ui-menu-item>a.ui-corner-all.ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
